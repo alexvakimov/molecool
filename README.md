@@ -20,3 +20,9 @@ Project based on the
 This repository is currently under development. To do a developmental install, download and type
 
 `pip install -e .`
+
+
+This package needs:
+
+  - numpy
+  - matplotlib
