@@ -6,7 +6,29 @@ Read and write the PDB files
 import numpy as np
 
 def open_pdb(file_location):
-    # This function reads in a pdb file and returns the atom names and coordinates.
+    """
+    This function reads in a pdb file and returns the atom names and coordinates.
+
+    Parameters
+    ----------
+    file_location : string
+        The name of the PDB file to read
+        
+    Returns
+    -------
+        symbols : list of strings
+            The atomic symbols
+        coordinates : np.ndarray
+            The coordinates from the pdb file
+
+    Examples
+    --------
+    >>> sym, coords = open_pdb("water.pdb")
+    ["H", "H", "O"], [...]
+
+    """
+    
+    
     with open(file_location) as f:
         data = f.readlines()
 
