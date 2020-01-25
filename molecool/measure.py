@@ -27,11 +27,15 @@ def calculate_distance(rA, rB):
     >>> r1 = np.array([0, 0, 0])
     >>> r2 = np.array([1, 0, 0])
     >>> calculate_distance(r1, r2)
-    1
+    1.0
 
     """
 
     # This function calculates the distance between two points given as numpy arrays.
+    if not isinstance(rA, np.ndarray) or not isinstance(rB, np.ndarray):
+        raise TypeError("Inputs must be of type np.ndarray for calculate_distance")
+
+   
     d = (rA - rB)
     dist = np.linalg.norm(d)
 

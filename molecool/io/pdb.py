@@ -23,8 +23,6 @@ def open_pdb(file_location):
 
     Examples
     --------
-    >>> sym, coords = open_pdb("water.pdb")
-    ["H", "H", "O"], [...]
 
     """
     
